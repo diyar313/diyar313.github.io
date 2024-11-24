@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CMSC320_Group_Final_Project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CMSC320_Group_Final_Project (1)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7516,7 +7516,31 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Group-Project-Checkpoint-2:-Life-Satisfaction-Data-Analysis">Group Project Checkpoint 2: Life Satisfaction Data Analysis<a class="anchor-link" href="#Group-Project-Checkpoint-2:-Life-Satisfaction-Data-Analysis">¶</a></h1><p>By: Nelithra Jayalatharachchi, Diya Rahi and Purva Chimurkar</p>
+<h1 id="An-Analysis-of-Socioeconomical-Factors-and-Rates-of-Happiness"><strong>An Analysis of Socioeconomical Factors and Rates of Happiness</strong><a class="anchor-link" href="#An-Analysis-of-Socioeconomical-Factors-and-Rates-of-Happiness">¶</a></h1><h1 id="Fall-2024-Data-Science-Project">Fall 2024 Data Science Project<a class="anchor-link" href="#Fall-2024-Data-Science-Project">¶</a></h1><p>Nelithra Jayalatharachchi, Diya Rahi and Purva Chimurkar</p>
+<p>Insert Contributions here</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="1.-Introduction"><strong>1. Introduction</strong><a class="anchor-link" href="#1.-Introduction">¶</a></h1><p>Life satisfaction is a critical measure of well-being that reflects an individual’s overall happiness and fulfillment. In our project, we aim to analyze how various demographic factors, such as age, gender, education level, and ethnicity influence life satisfaction. Using data from Statistics Canada, we will explore trends and correlations in happiness ratings reported on a scale of 1 to 10 by individuals from a variety of socieconomic backgrounds.This dataset was chosen for its comprehensive nature, reputable source, and relevance to our shared interest in understanding societal happiness. It offers a unique opportunity to explore whether certain demographic groups consistently report higher levels of satisfaction and to investigate claims about whether specific generations “had it better.” The insights derived from this analysis could inform policies aimed at improving societal well-being and addressing inequalities.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="2.-Data-Curation"><strong>2. Data Curation</strong><a class="anchor-link" href="#2.-Data-Curation">¶</a></h1><p>Our data, "Life satisfaction by gender and other selected sociodemographic characteristics" is from Statistics Canada, the official national statistics agency of the Government of Canada. We will be using the Age, Location, and Education subsections from this data for our analysis. Since this dataset contains a extra information that is not applicable, we will be cleaning this data by examining if there are any missing values (and resolving them if there are any present), and splitting the data into three separate, examinable DataFrames for each factor.</p>
+<h1 id="2.1-Data-Cleaning">2.1 Data Cleaning<a class="anchor-link" href="#2.1-Data-Cleaning">¶</a></h1><p>The first step is to load and display the initial dataset:</p>
 </div>
 </div>
 </div>
@@ -7525,7 +7549,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Import statements.</span>
@@ -7551,9 +7575,9 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-1d8b41bc-76c1-4ac6-a477-5b3a41f4d7aa">
+<div class="colab-df-container" id="df-ba8a9306-85e8-4d9f-99b2-ed22f3fb623e">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -7993,7 +8017,7 @@ a.anchor-link {
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-1d8b41bc-76c1-4ac6-a477-5b3a41f4d7aa')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-ba8a9306-85e8-4d9f-99b2-ed22f3fb623e')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8040,12 +8064,12 @@ a.anchor-link {
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-1d8b41bc-76c1-4ac6-a477-5b3a41f4d7aa button.colab-df-convert');
+        document.querySelector('#df-ba8a9306-85e8-4d9f-99b2-ed22f3fb623e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1d8b41bc-76c1-4ac6-a477-5b3a41f4d7aa');
+        const element = document.querySelector('#df-ba8a9306-85e8-4d9f-99b2-ed22f3fb623e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8063,8 +8087,8 @@ a.anchor-link {
       }
     </script>
 </div>
-<div id="df-ef16c496-ca9d-44e6-8607-c15ac168b891">
-<button class="colab-df-quickchart" onclick="quickchart('df-ef16c496-ca9d-44e6-8607-c15ac168b891')" style="display:none;" title="Suggest charts">
+<div id="df-204a1a70-c629-413c-8893-f89a7bb1957c">
+<button class="colab-df-quickchart" onclick="quickchart('df-204a1a70-c629-413c-8893-f89a7bb1957c')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8177,13 +8201,13 @@ a.anchor-link {
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-ef16c496-ca9d-44e6-8607-c15ac168b891 button');
+        document.querySelector('#df-204a1a70-c629-413c-8893-f89a7bb1957c button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_bc98f92a-82bd-4469-bbe6-aca39c779c4b">
+<div id="id_85befd61-096d-4f99-b06d-8b41d06179a4">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -8223,7 +8247,7 @@ a.anchor-link {
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_bc98f92a-82bd-4469-bbe6-aca39c779c4b button.colab-df-generate');
+        document.querySelector('#id_85befd61-096d-4f99-b06d-8b41d06179a4 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -8246,7 +8270,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Data-Cleaning:"><strong>Data Cleaning:</strong><a class="anchor-link" href="#Data-Cleaning:">¶</a></h1>
+<p>Now we will clean the dataset. We will check to see how much of the data is missing, and if it this values need to be dropped/replaced.</p>
 </div>
 </div>
 </div>
@@ -8255,7 +8279,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Checking how much data is missing:</span>
@@ -8272,7 +8296,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8350,8 +8374,73 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>Conclusion</strong></p>
 <p>By finding that percentage of data that is missing or NaN to be 0% in all categories, we determined that there are no missing values to replace/"clean."</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Now, we will split our data into our three categories of interest: Age, Location, and Education</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Age</span>
+<span class="n">columns_of_interest_age</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'Unnamed: 0'</span><span class="p">,</span>
+    <span class="s1">'Life satisfaction rating between 0 and 5 - Total'</span><span class="p">,</span>
+    <span class="s1">'Life satisfaction rating of 6 or 7 - Total'</span><span class="p">,</span>
+    <span class="s1">'Life satisfaction rating of 8, 9 or 10 - Total'</span>
+<span class="p">]</span>
+
+<span class="c1"># Location</span>
+<span class="n">columns_of_interest_location</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">'Unnamed: 0'</span><span class="p">,</span>
+    <span class="s1">'Life satisfaction rating between 0 and 5 - Total'</span><span class="p">,</span>
+    <span class="s1">'Life satisfaction rating of 6 or 7 - Total'</span><span class="p">,</span>
+    <span class="s1">'Life satisfaction rating of 8, 9 or 10 - Total'</span>
+<span class="p">]</span>
+
+<span class="c1"># Education</span>
+<span class="n">columns_of_interest_education</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'No certificate, diploma or degree'</span><span class="p">,</span>
+                   <span class="s1">'Secondary (high) school diploma or equivalency certificate'</span><span class="p">,</span>
+                   <span class="s1">'Postsecondary certificate, diploma or degree'</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Our data is now fully curated and ready to explore.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Exploratory-Data-Analysis"><strong>Exploratory Data Analysis</strong><a class="anchor-link" href="#Exploratory-Data-Analysis">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8371,7 +8460,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Basic size information:</span>
@@ -8386,7 +8475,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>(31, 10)</pre>
 </div>
@@ -8398,7 +8487,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Basic summary:</span>
@@ -8413,9 +8502,9 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-5e2d3b2b-d6f1-4fc5-bac7-78362549095d">
+<div class="colab-df-container" id="df-f2252a25-0915-4bb5-ba74-439f0169c0bf">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8547,7 +8636,7 @@ a.anchor-link {
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-5e2d3b2b-d6f1-4fc5-bac7-78362549095d')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-f2252a25-0915-4bb5-ba74-439f0169c0bf')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8594,12 +8683,12 @@ a.anchor-link {
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-5e2d3b2b-d6f1-4fc5-bac7-78362549095d button.colab-df-convert');
+        document.querySelector('#df-f2252a25-0915-4bb5-ba74-439f0169c0bf button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-5e2d3b2b-d6f1-4fc5-bac7-78362549095d');
+        const element = document.querySelector('#df-f2252a25-0915-4bb5-ba74-439f0169c0bf');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8617,8 +8706,8 @@ a.anchor-link {
       }
     </script>
 </div>
-<div id="df-17a070aa-f4e7-4d0e-971c-661a2aba6ff8">
-<button class="colab-df-quickchart" onclick="quickchart('df-17a070aa-f4e7-4d0e-971c-661a2aba6ff8')" style="display:none;" title="Suggest charts">
+<div id="df-e163332f-d802-466d-926c-fe03b6682442">
+<button class="colab-df-quickchart" onclick="quickchart('df-e163332f-d802-466d-926c-fe03b6682442')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8731,7 +8820,7 @@ a.anchor-link {
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-17a070aa-f4e7-4d0e-971c-661a2aba6ff8 button');
+        document.querySelector('#df-e163332f-d802-466d-926c-fe03b6682442 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -8771,20 +8860,13 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Age</span>
 
-<span class="n">columns_of_interest</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">'Unnamed: 0'</span><span class="p">,</span>
-    <span class="s1">'Life satisfaction rating between 0 and 5 - Total'</span><span class="p">,</span>
-    <span class="s1">'Life satisfaction rating of 6 or 7 - Total'</span><span class="p">,</span>
-    <span class="s1">'Life satisfaction rating of 8, 9 or 10 - Total'</span>
-<span class="p">]</span>
-
 <span class="c1"># Filtering the dataframe for age groups and satisfaction ratings</span>
-<span class="n">life_df_age_groups</span> <span class="o">=</span> <span class="n">life_df</span><span class="p">[</span><span class="n">columns_of_interest</span><span class="p">]</span>
+<span class="n">life_df_age_groups</span> <span class="o">=</span> <span class="n">life_df</span><span class="p">[</span><span class="n">columns_of_interest_age</span><span class="p">]</span>
 <span class="n">life_df_age_groups</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Age Group'</span><span class="p">,</span> <span class="s1">'Rating 0-5'</span><span class="p">,</span> <span class="s1">'Rating 6-7'</span><span class="p">,</span> <span class="s1">'Rating 8-10'</span><span class="p">]</span>
 
 <span class="c1"># Dropping rows that are not related to age groups</span>
@@ -8815,9 +8897,9 @@ a.anchor-link {
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-7a4be6b3-cbbf-4bc7-9fb0-5efeebc53b88">
+<div class="colab-df-container" id="df-6aa69e05-bc41-4a53-96a1-22058c715a1b">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8895,7 +8977,7 @@ a.anchor-link {
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-7a4be6b3-cbbf-4bc7-9fb0-5efeebc53b88')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-6aa69e05-bc41-4a53-96a1-22058c715a1b')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8942,12 +9024,12 @@ a.anchor-link {
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-7a4be6b3-cbbf-4bc7-9fb0-5efeebc53b88 button.colab-df-convert');
+        document.querySelector('#df-6aa69e05-bc41-4a53-96a1-22058c715a1b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-7a4be6b3-cbbf-4bc7-9fb0-5efeebc53b88');
+        const element = document.querySelector('#df-6aa69e05-bc41-4a53-96a1-22058c715a1b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8965,8 +9047,8 @@ a.anchor-link {
       }
     </script>
 </div>
-<div id="df-d3c6efca-450a-40e0-927b-74304980622a">
-<button class="colab-df-quickchart" onclick="quickchart('df-d3c6efca-450a-40e0-927b-74304980622a')" style="display:none;" title="Suggest charts">
+<div id="df-2efa5ead-0def-47e8-854f-e233cfccc64f">
+<button class="colab-df-quickchart" onclick="quickchart('df-2efa5ead-0def-47e8-854f-e233cfccc64f')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -9079,7 +9161,7 @@ a.anchor-link {
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-d3c6efca-450a-40e0-927b-74304980622a button');
+        document.querySelector('#df-2efa5ead-0def-47e8-854f-e233cfccc64f button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
@@ -9096,7 +9178,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">total_group</span> <span class="o">=</span> <span class="n">life_df_age_groups</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s2">"Total, 15 years and over"</span><span class="p">]</span>
@@ -9197,20 +9279,12 @@ Rating 8-10: Z-score = 0.20538, p-value = 0.83728
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Location</span>
 
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">chi2_contingency</span>
-
-<span class="c1"># Filter columns for location analysis</span>
-<span class="n">columns_of_interest_location</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">'Unnamed: 0'</span><span class="p">,</span>
-    <span class="s1">'Life satisfaction rating between 0 and 5 - Total'</span><span class="p">,</span>
-    <span class="s1">'Life satisfaction rating of 6 or 7 - Total'</span><span class="p">,</span>
-    <span class="s1">'Life satisfaction rating of 8, 9 or 10 - Total'</span>
-<span class="p">]</span>
 
 <span class="c1"># Filter columns for rural vs urban areas and satisfaction ratings</span>
 <span class="n">life_df_location</span> <span class="o">=</span> <span class="n">life_df</span><span class="p">[</span><span class="n">columns_of_interest_location</span><span class="p">]</span>
@@ -9290,22 +9364,19 @@ Rating 8-10: Z-score = 0.20538, p-value = 0.83728
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Education</span>
 
 <span class="c1"># Extractin the relevant columns for analysing the relationship between education</span>
 <span class="c1"># level and life satisfaction.</span>
-<span class="n">education_levels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'No certificate, diploma or degree'</span><span class="p">,</span>
-                   <span class="s1">'Secondary (high) school diploma or equivalency certificate'</span><span class="p">,</span>
-                   <span class="s1">'Postsecondary certificate, diploma or degree'</span><span class="p">]</span>
 <span class="n">satisfaction_ratings</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Life satisfaction rating between 0 and 5 - Total'</span><span class="p">,</span>
                        <span class="s1">'Life satisfaction rating of 6 or 7 - Total'</span><span class="p">,</span>
                        <span class="s1">'Life satisfaction rating of 8, 9 or 10 - Total'</span><span class="p">]</span>
 
 <span class="c1"># Filter life_df for the selected education levels.</span>
-<span class="n">filtered_df</span> <span class="o">=</span> <span class="n">life_df</span><span class="p">[</span><span class="n">life_df</span><span class="p">[</span><span class="s1">'Unnamed: 0'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">education_levels</span><span class="p">)]</span>
+<span class="n">filtered_df</span> <span class="o">=</span> <span class="n">life_df</span><span class="p">[</span><span class="n">life_df</span><span class="p">[</span><span class="s1">'Unnamed: 0'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">columns_of_interest_education</span><span class="p">)]</span>
 
 <span class="c1"># Colors for the graph.</span>
 <span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'turquoise'</span><span class="p">,</span> <span class="s1">'lemonchiffon'</span><span class="p">,</span> <span class="s1">'mediumvioletred'</span><span class="p">]</span>
@@ -9341,13 +9412,13 @@ Rating 8-10: Z-score = 0.20538, p-value = 0.83728
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># The oneway function requires an array of input.</span>
 <span class="c1"># The following for loop creates an array for each category's data.</span>
 <span class="n">data_for_anova</span> <span class="o">=</span> <span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="n">filtered_df</span><span class="p">[</span><span class="s1">'Unnamed: 0'</span><span class="p">]</span> <span class="o">==</span> <span class="n">level</span><span class="p">][</span><span class="n">satisfaction_ratings</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
-                  <span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="n">education_levels</span><span class="p">]</span>
+                  <span class="k">for</span> <span class="n">level</span> <span class="ow">in</span> <span class="n">columns_of_interest_education</span><span class="p">]</span>
 
 <span class="c1"># ANOVA testing:</span>
 <span class="n">_</span><span class="p">,</span> <span class="n">pvalue</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">f_oneway</span><span class="p">(</span><span class="o">*</span><span class="n">data_for_anova</span><span class="p">)</span>
@@ -9356,7 +9427,7 @@ Rating 8-10: Z-score = 0.20538, p-value = 0.83728
 
 <span class="c1"># Creating a box and whisker plot to display the means of each group.</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">'right'</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Unnamed: 0'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'value'</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="n">satisfaction_ratings</span> <span class="o">+</span> <span class="p">[</span><span class="s1">'Unnamed: 0'</span><span class="p">]],</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">'Unnamed: 0'</span><span class="p">]),</span> <span class="n">order</span><span class="o">=</span><span class="n">education_levels</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'mediumpurple'</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Unnamed: 0'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'value'</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">filtered_df</span><span class="p">[</span><span class="n">satisfaction_ratings</span> <span class="o">+</span> <span class="p">[</span><span class="s1">'Unnamed: 0'</span><span class="p">]],</span> <span class="n">id_vars</span><span class="o">=</span><span class="p">[</span><span class="s1">'Unnamed: 0'</span><span class="p">]),</span> <span class="n">order</span><span class="o">=</span><span class="n">columns_of_interest_education</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'mediumpurple'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Education Level'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Life Satisfaction Rating'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Life Satisfaction Ratings by Education Level (ANOVA Test)'</span><span class="p">)</span>
